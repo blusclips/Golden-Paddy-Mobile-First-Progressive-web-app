@@ -3,7 +3,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Icon from '../atoms/Icon/icon';
 import Typography from '../atoms/Typography/Typography';
 import Image from '../atoms/Image/image';
 import { makeStyles } from '@material-ui/core/styles';

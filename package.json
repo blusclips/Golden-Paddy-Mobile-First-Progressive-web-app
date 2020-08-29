@@ -17,19 +17,14 @@
     "react-dom": "^16.13.1",
     "react-foundation": "^0.9.6",
     "react-loader-spinner": "^3.1.14",
-    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,13 +43,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
-    "@storybook/addon-actions": "^6.0.20",
-    "@storybook/addon-essentials": "^6.0.20",
-    "@storybook/addon-links": "^6.0.20",
-    "@storybook/addon-storyshots": "^6.0.20",
-    "@storybook/node-logger": "^6.0.20",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^6.0.20",
     "@types/react": "^16.9.48",
     "@types/react-dom": "^16.9.8",
     "@types/react-redux": "^7.1.9",

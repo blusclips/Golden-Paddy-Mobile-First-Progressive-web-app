@@ -43,7 +43,7 @@ export default ({
   const classes = useStyles();
   return (
     <Container margin={70} width="100%" height={200}>
-      <Container width="100%" margin={30} height={50}>
+      <Container width="90%" margin={30} height={50}>
         <Grid
           justify="center"
           className={classes.container}
@@ -70,7 +70,7 @@ export default ({
           </Grid>
         </Grid>
       </Container>
-      <Container width="100%" margin={50} height={50}>
+      <Container width="90%" margin={50} height={50}>
         <Grid
           justify="center"
           className={classes.container}
@@ -97,7 +97,7 @@ export default ({
           </Grid>
         </Grid>
       </Container>
-      <Container width="90%" margin={80}>
+      <Container width="82%" margin={80}>
         <LoginButton onClick={onLogin} active block title="login" />
       </Container>
     </Container>

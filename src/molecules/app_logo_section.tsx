@@ -8,9 +8,7 @@ import Image from '../atoms/Image/image';
 import Typography from '../atoms/Typography/Typography';
 import DATA from '../config/data';
 
-export interface AppSectionProps {}
-
-export default ({}: AppSectionProps) => {
+export default () => {
   const useStyles = makeStyles({
     container: {
       justifyContent: 'center',
@@ -22,7 +20,7 @@ export default ({}: AppSectionProps) => {
   });
   const classes = useStyles();
   return (
-    <Container margin={120} width="100%" height={60}>
+    <Container margin={120} width="90%" height={60}>
       <Grid
         justify="center"
         className={classes.container}

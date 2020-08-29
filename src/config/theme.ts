@@ -15,8 +15,9 @@ export const COLORS = {
 };
 
 export const FONT_SIZE = {
-  TITLE: '',
-  SUBTITLE: '',
+  TITLE: '18x',
+  SUBTITLE: '11px',
   PARAGRAPH: '',
-  LABEL: '',
+  LABEL: '14px',
+  TAB: '12px'
 };

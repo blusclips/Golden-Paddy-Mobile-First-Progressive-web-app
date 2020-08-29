@@ -12,6 +12,7 @@ export interface TypographyProps {
   color?: string;
   subtitle?: boolean;
   paragraph?: string;
+  tab?: boolean;
   size?: number;
 }
 
@@ -22,6 +23,7 @@ export default ({
   title,
   subtitle,
   paragraph,
+  tab,
   size,
 }: TypographyProps) => {
   const useStyles = makeStyles({
@@ -36,8 +38,8 @@ export default ({
         ? FONT_SIZE.SUBTITLE
         : paragraph
         ? FONT_SIZE.PARAGRAPH
-        : FONT_SIZE.LABEL,
-      fontWeight: title ? 'bold' : 'normal',
+        : tab ? FONT_SIZE.TAB : FONT_SIZE.LABEL,
+      fontWeight: title || tab  ? 'bold' : 'normal',
       textTransform: uppercase ? 'uppercase' : 'none',
       justifyContent: 'center',
     },

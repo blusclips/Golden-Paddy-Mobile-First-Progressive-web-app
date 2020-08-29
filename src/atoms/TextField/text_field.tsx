@@ -41,6 +41,7 @@ export default ({
       fontSize: '14px',
       height: 40,
       fontWeight: 'bold',
+      width: '100%'
     },
     label: {
       color: COLORS.TERTIARY_COLOR_LIGHT,

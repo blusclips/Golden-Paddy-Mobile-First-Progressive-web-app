@@ -14,12 +14,12 @@ export interface IconProps {
   margin?: number | string;
 }
 
-export default ({ name, disabled, active, buttonIcon, margin }: IconProps) => {
+export default ({ name, disabled, active, buttonIcon, margin, color }: IconProps) => {
   const useStyles = makeStyles({
     root: {
       fontSize: '20px',
       alignSelf: 'center',
-      color: active
+      color: color ? color : active
         ? buttonIcon
           ? COLORS.WHITE
           : COLORS.PRIMARY_COLOR
