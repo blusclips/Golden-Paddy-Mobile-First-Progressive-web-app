@@ -11,21 +11,25 @@ This is a Platform to Show Case Different Varieties of Groceries For Sale..
 ### Project Structure
 
 This project is built on React and the foundation of the Atomic Design Workflow.
-This directory contains scripts for the entire application. The application has two key modules (the web app, and server service).
+This directory contains scripts for the entire application.
 
 <h1> Project Folders </h1>
 <ul> 
-      <li> Public 
-        <h5> Contains Static Folders </h5>
-      <li>
-      <li> Src <li>
+      <li> Public <li>
+      <li> src <li>
+      <ul>
+         <li> atoms <li>
+         <li> molecules <li>
+         <li> templates <li>
+         <li> pages <li>
+      </ul>
    </ul>
 
 Access the root directory, and execute <i>'npm install'</i> on the terminal (command prompt). This will install the requisite packages for the web app to run ie (ensure Nodejs is Installed).
 
 ### Setup
 
----
+The application has two key modules (the web app, and server service).
 
 Setup is done at Only one Level. At the;
 
