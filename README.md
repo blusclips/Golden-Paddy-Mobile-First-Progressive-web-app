@@ -10,7 +10,18 @@ This is a Platform to Show Case Different Varieties of Groceries For Sale..
 
 ### Project Structure
 
+This project is built on React and the foundation of the Atomic Design Workflow.
 This directory contains scripts for the entire application. The application has two key modules (the web app, and server service).
+
+<h1> Project Folders </h1>
+<ul> 
+      <li> Public 
+        <h5> Contains Static Folders </h5>
+      <li>
+      <li> Src <li>
+   </ul>
+
+Access the root directory, and execute <i>'npm install'</i> on the terminal (command prompt). This will install the requisite packages for the web app to run ie (ensure Nodejs is Installed).
 
 ### Setup
 
@@ -25,18 +36,9 @@ Setup is done at Only one Level. At the;
 
 #### Web app level
 
----
-
-### Project Structure
-
-This project is built on the foundation of the Atomic Design Workflow.
-
-   <ul> 
-      <li> Public Folder <li>
-      <li> Src Folder <li>
-   </ul>
-
 Access the root directory, and execute <i>'npm install'</i> on the terminal (command prompt). This will install the requisite packages for the web app to run ie (ensure Nodejs is Installed).
+
+---
 
 #### Server level
 
@@ -47,7 +49,7 @@ The Server service is implemented Using Firebase Authentication (email and Passw
 The server service level does not not require to install packages to run.
 
 Upon running the Application.
-Loin with the Following Credentials to proceed further
+Login with the Following Credentials to proceed further
 
  <blockquote> Email: <strong> zonaster256@gmail.com </strong> </blockquote>
  <blockquote> Password: <strong> nixongrocerystory </strong> </blockquote>
