@@ -17,7 +17,7 @@ export interface TypographyProps {
 }
 
 export default ({
-  user,
+  user='',
   avatar,
   onLogoutOrIn,
   authenticate,
@@ -56,7 +56,6 @@ export default ({
       <Paper elevation={0} className={classes.root}>
         <Grid
           justify="center"
-          className={classes.container}
           container
           item
           xs={12}
@@ -64,22 +63,20 @@ export default ({
           <Grid className={classes.tabContainer} xs={2}>
             <Image
               width={35}
-              source={authenticate ? (avatar ? avatar : '/') : null}
+              source={authenticate ? (avatar ? avatar : '/') : undefined}
               height={35}
+              alt="user"
             />
           </Grid>
           <Grid className={classes.tabContainer} xs={2}>
-            <Typography title> {authenticate ? user : ''} </Typography>
+            <Typography title>{authenticate ? user : ''}</Typography>
           </Grid>
           <Grid className={classes.tabContainer} xs={5}>
             {authenticate && <Icon name="add_shopping_cart" />}
           </Grid>
           <Grid onClick={onLogoutOrIn} className={classes.tabContainer} xs={3}>
             {'    '}
-            <Typography title>
-              {' '}
-              {authenticate ? 'Logout' : 'Login '}{' '}
-            </Typography>
+            <Typography title>{authenticate ? ' Logout ' : ' Login '}</Typography>
             <Icon
               margin={5}
               name={authenticate ? 'power_settings_new' : 'login'}

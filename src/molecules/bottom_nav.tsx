@@ -55,7 +55,6 @@ export default ({
       <Paper elevation={0} className={classes.root}>
         <Grid
           justify="center"
-          className={classes.container}
           container
           item
           xs={12}

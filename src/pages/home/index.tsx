@@ -31,7 +31,7 @@ export default () => {
     <div className="home">
       <Loader visible={!authenticate} />
       {authenticate && (
-        <HomeTemplate authenticate={authenticate} onLogout={onSignOut} />
+        <HomeTemplate authenticate={authenticate} onLogout={onSignOut} onLogIn={() => null} />
       )}
     </div>
   );
