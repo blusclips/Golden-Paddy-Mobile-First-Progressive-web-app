@@ -25,6 +25,8 @@ Setup is done at Only one Level. At the;
 
 #### Web app level
 
+---
+
 ### Project Structure
 
 This project is built on the foundation of the Atomic Design Workflow.
@@ -34,17 +36,7 @@ This project is built on the foundation of the Atomic Design Workflow.
       <li> Src Folder <li>
    </ul>
 
----
-
 Access the root directory, and execute <i>'npm install'</i> on the terminal (command prompt). This will install the requisite packages for the web app to run ie (ensure Nodejs is Installed).
-
-### Project Structure
-
-This project is built on the foundation of the Atomic Design Workflow.
-
-   <ul> 
-      <li> <li>
-   </ul>
 
 #### Server level
 
