@@ -8,7 +8,7 @@ export interface TypographyProps {
   source?: string;
   alt: string;
   width?: number | string;
-  height?: number;
+  height?: number | string;
   square?: boolean;
 }
 
@@ -24,7 +24,7 @@ export default ({ source, alt, width, height, square }: TypographyProps) => {
   return (
     <Avatar
       className={classes.root}
-      alt={alt}
+      alt={alt ? alt : 'img'}
       src={source ? source : '/logo.png'}
     />
   );

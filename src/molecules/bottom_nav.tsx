@@ -28,7 +28,7 @@ export default ({
     root: {
       width: '100%',
       height: 55,
-      position: 'sticky',
+      position: 'fixed',
       bottom: 0,
       borderRadius: 0,
       backgroundColor: '#fff',

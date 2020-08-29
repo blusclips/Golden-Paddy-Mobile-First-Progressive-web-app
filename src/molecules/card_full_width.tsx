@@ -19,7 +19,7 @@ export default ({ title, description, source }: Props) => {
     root: {
       width: '95%',
       marginLeft: '2.5%',
-      height: 205,
+      height: 180,
       backgroundColor: COLORS.WHITE,
       marginBottom: 5,
       borderStyle: 'solid',
@@ -28,7 +28,7 @@ export default ({ title, description, source }: Props) => {
     },
     tabContainer: {
       width: '100%',
-      height: 110,
+      height: 180,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -36,7 +36,7 @@ export default ({ title, description, source }: Props) => {
     },
     paragraph: {
       width: '100%',
-      height: 210,
+      height: 150,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'flex-start',
@@ -63,7 +63,7 @@ export default ({ title, description, source }: Props) => {
         </Grid>
         <Grid className={classes.paragraph} xs={8}>
           <Typography title> {title} </Typography>
-          <Typography label>{description}</Typography>
+          <Typography label size={14}>{description}</Typography>
         </Grid>
       </Grid>
     </Paper>

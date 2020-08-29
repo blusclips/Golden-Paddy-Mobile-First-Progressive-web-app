@@ -18,6 +18,6 @@ export const FONT_SIZE = {
   TITLE: '18x',
   SUBTITLE: '11px',
   PARAGRAPH: '',
-  LABEL: '14px',
+  LABEL: '11px',
   TAB: '12px'
 };

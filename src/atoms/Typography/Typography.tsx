@@ -13,7 +13,7 @@ export interface TypographyProps {
   subtitle?: boolean;
   paragraph?: string;
   tab?: boolean;
-  size?: number;
+  size?: number| string;
 }
 
 export default ({

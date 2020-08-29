@@ -42,7 +42,7 @@ export default ({
   });
   const classes = useStyles();
   return (
-    <Container margin={70} width="100%" height={200}>
+    <Container margin={120} width="100%" height={200}>
       <Container width="90%" margin={30} height={50}>
         <Grid
           justify="center"

@@ -20,7 +20,7 @@ export default () => {
   });
   const classes = useStyles();
   return (
-    <Container margin={120} width="90%" height={60}>
+    <Container margin={100} width="90%" height={60}>
       <Grid
         justify="center"
         className={classes.container}
@@ -29,16 +29,21 @@ export default () => {
         xs={12}
       >
         <Grid xs={3}>
-          <Image alt={DATA.APP_NAME} width={80} height={80} />
+          <Image alt={DATA.APP_NAME} width={60} height={60} />
         </Grid>
         <Grid direction="column" className={classes.text} xs={8}>
-          <Container width="100%" height="100%" margin={20}>
-            <Typography subtitle size={21}>
+          <Container width="100%" height="100%" margin={0}>
+            <Typography title size={21}>
               {DATA.APP_NAME}
             </Typography>
           </Container>
         </Grid>
       </Grid>
+      <Container margin={30} width="90%">
+          <Typography size={16}>
+              {DATA.DESCRIPTION}
+          </Typography>
+      </Container>
     </Container>
   );
 };
