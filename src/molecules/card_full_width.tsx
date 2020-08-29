@@ -14,7 +14,7 @@ export interface Props {
   source?: string;
 }
 
-export default ({ title, description, source }: Props) => {
+export default ({ title, description='', source }: Props) => {
   const useStyles = makeStyles({
     root: {
       width: '95%',
@@ -48,7 +48,6 @@ export default ({ title, description, source }: Props) => {
     <Paper elevation={0} className={classes.root}>
       <Grid
         justify="center"
-        className={classes.container}
         container
         item
         xs={12}
@@ -58,12 +57,13 @@ export default ({ title, description, source }: Props) => {
             source={source ? source : '/'}
             width={100}
             height={100}
+            alt="item"
             square
           />
         </Grid>
         <Grid className={classes.paragraph} xs={8}>
-          <Typography title> {title} </Typography>
-          <Typography label size={14}>{description}</Typography>
+          <Typography title>{title}</Typography>
+          <Typography size={14}>{description}</Typography>
         </Grid>
       </Grid>
     </Paper>

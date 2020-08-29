@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '../Icon/icon';
-import { FONT_SIZE, COLORS } from '../../config/theme';
+import { COLORS } from '../../config/theme';
 
 export interface TypographyProps {
   title: string;

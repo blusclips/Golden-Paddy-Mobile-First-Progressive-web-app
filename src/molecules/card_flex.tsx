@@ -14,7 +14,7 @@ export interface TypographyProps {
   source?: string;
 }
 
-export default ({ title, source }: TypographyProps) => {
+export default ({ title='', source }: TypographyProps) => {
   const useStyles = makeStyles({
     root: {
       width: '90%',
@@ -52,11 +52,11 @@ export default ({ title, source }: TypographyProps) => {
     <Paper elevation={0} className={classes.root}>
       <Grid justify="center" xs={12}>
           <Grid className={classes.textCenter}>
-               <Typography title> {title} </Typography>
+               <Typography title>{title}</Typography>
           </Grid>
           <Container width="90%"> 
               <Image
-               alt="img"
+               alt="item"
                source={source ? source : '/.'}
                width={'100%'}
                height={'150%'}
