@@ -31,12 +31,7 @@ Access the root directory, and execute <i>'npm install'</i> on the terminal (com
 
 The application has two key modules (the web app, and server service).
 
-Setup is done at Only one Level. At the;
-
-<ul> 
-    <li>Web app level </li>
-    <li> server service level </li>
-</ul>
+Setup is done at Only Web app level;
 
 #### Web app level
 
@@ -46,17 +41,9 @@ Access the root directory, and execute <i>'npm install'</i> on the terminal (com
 
 #### Server level
 
----
-
 The Server service is implemented Using Firebase Authentication (email and Password);
 
 The server service level does not not require to install packages to run.
-
-Upon running the Application.
-Login with the Following Credentials to proceed further
-
- <blockquote> Email: <strong> zonaster256@gmail.com </strong> </blockquote>
- <blockquote> Password: <strong> nixongrocerystore </strong> </blockquote>
 
 ### Running the application
 
@@ -64,10 +51,16 @@ Login with the Following Credentials to proceed further
 
 For web app, access the root directory of the application from the terminal (command prompt) and execute the command <i>'npm run start'</i>. This command will start the web app and launch an instance of the web app on the default browser.
 
+Upon running the Application.
+Login with the Following Credentials to proceed further
+
+ <blockquote> Email: <strong> zonaster256@gmail.com </strong> </blockquote>
+ <blockquote> Password: <strong> nixongrocerystore </strong> </blockquote>
+
 ### Application Hosting
 
 This application is hosted on Firebase Cloud.
-under url: <a> https://goldenpaddy-fb255.web.app/login </a>
+under url: <a> https://goldenpaddy-fb255.web.app </a>
 
 ### For enquiries
 
