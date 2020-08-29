@@ -1,0 +1,22 @@
+/** @format */
+
+export const COLORS = {
+  FONT_TYPE: 'Red Hard Display',
+  PRIMARY_COLOR: '#1D9129',
+  PRIMARY_COLOR_LIGHT: '#2FB53D',
+  PRIMARY_LIGHT_BACKGROUND: '#e7f5e7',
+  SECONDARY_COLOR: '#FECC17',
+  SECONDARY_COLOR_LIGHT: '#FFD744',
+  TERTIARY_COLOR: '#4C4C4C',
+  TERTIARY_COLOR_LIGHT: '#C4C4C4',
+  GRAY_COLOR: '#828282',
+  WHITE_GRAY: '#E0DEDE',
+  WHITE: '#fff',
+};
+
+export const FONT_SIZE = {
+  TITLE: '',
+  SUBTITLE: '',
+  PARAGRAPH: '',
+  LABEL: '',
+};
