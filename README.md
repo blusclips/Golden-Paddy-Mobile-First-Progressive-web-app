@@ -1,44 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- @format -->
 
-## Available Scripts
+### Nixon Grocery Store
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+### Project Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a Platform to Show Case Different Varieties of Groceries For Sale..
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Project Structure
 
-### `yarn test`
+This directory contains scripts for the entire application. The application has two key modules (the web app, and server service).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Setup is done at Only one Level. At the;
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<ul> 
+    <li>Web app level </li>
+    <li> server service level </li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Web app level
 
-### `yarn eject`
+### Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project is built on the foundation of the Atomic Design Workflow.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   <ul> 
+      <li> Public Folder <li>
+      <li> Src Folder <li>
+   </ul>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Access the root directory, and execute <i>'npm install'</i> on the terminal (command prompt). This will install the requisite packages for the web app to run ie (ensure Nodejs is Installed).
 
-## Learn More
+### Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is built on the foundation of the Atomic Design Workflow.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   <ul> 
+      <li> <li>
+   </ul>
+
+#### Server level
+
+---
+
+The Server service is implemented Using Firebase Authentication (email and Password);
+
+The server service level does not not require to install packages to run.
+
+Upon running the Application.
+Loin with the Following Credentials to proceed further
+
+ <blockquote> Email: <strong> zonaster256@gmail.com </strong> </blockquote>
+ <blockquote> Password: <strong> nixongrocerystory </strong> </blockquote>
+
+### Running the application
+
+---
+
+For web client, access the root directory of the application from the terminal (command prompt) and execute the command <i>'npm run start'</i>. This command will start the web app and launch an instance of the web app on the default browser.
+
+### Application Hosting
+
+This application is hosted on Firebase Cloud.
+under url: <a> https://goldenpaddy-fb255.web.app/login </a>
+
+### For enquiries
+
+---
+
+Send any enquiries to <i>Maseruka Cephas at cephasmaseruka@gmail.com</i>
