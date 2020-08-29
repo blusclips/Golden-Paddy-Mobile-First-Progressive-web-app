@@ -9,13 +9,15 @@ export interface TypographyProps {
   alt: string;
   width?: number | string;
   height?: number;
+  square?: boolean;
 }
 
-export default ({ source, alt, width, height }: TypographyProps) => {
+export default ({ source, alt, width, height, square }: TypographyProps) => {
   const useStyles = makeStyles({
     root: {
       width: width ? width : 100,
       height: height ? height : 100,
+      borderRadius: square ? 5 : 100,
     },
   });
   const classes = useStyles();

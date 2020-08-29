@@ -1,7 +1,14 @@
 /** @format */
 
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import DefaultTemplate from '../../templates/default';
 
 export default () => {
-  return <div> default </div>;
+  let history = useHistory();
+  return (
+    <>
+      <DefaultTemplate onLogIn={() => history.push('/login')} />
+    </>
+  );
 };

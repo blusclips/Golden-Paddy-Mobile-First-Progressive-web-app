@@ -12,6 +12,7 @@ export interface TypographyProps {
   height?: number | string;
   margin?: number | string;
   bgColor?: string;
+  className?: any;
 }
 
 export default ({
@@ -21,6 +22,7 @@ export default ({
   height,
   margin,
   bgColor,
+  className,
 }: TypographyProps) => {
   const useStyles = makeStyles({
     root: {

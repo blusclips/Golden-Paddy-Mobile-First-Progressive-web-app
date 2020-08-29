@@ -4,6 +4,8 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 
+// just added firebase files here. for demo purposes.. actual configs are put in .env files
+
 const firebaseConfig = {
   apiKey: 'AIzaSyDhpaQux1w_TbXRpz8ruJ8q-xRjkTmv4dc',
   authDomain: 'goldenpaddy-c98de.firebaseapp.com',

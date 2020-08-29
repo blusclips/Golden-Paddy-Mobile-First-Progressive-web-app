@@ -2,51 +2,33 @@
 
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import AppLogoSection from '../../molecules/app_logo_section';
-import LoginForm from '../../molecules/login_form';
 import { auth } from '../../config/firebase';
+import LoginTemplate from '../../templates/login';
+
+interface User {
+  email: string;
+  password: string;
+}
 
 export default () => {
   let history = useHistory();
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState(false);
+  const [authenticateError, setAuthenticateError] = useState(false);
 
-  const onUsername = (text: string) => {
-    setError(false);
-    setPassword(text);
-  };
-
-  const onEmail = (text: string) => {
-    setError(false);
-    setEmail(text);
-  };
-
-  const onLoginUser = async () => {
+  const onLoginUser = async ({ email, password }: User) => {
     try {
-      const { user }: any = await auth.signInWithEmailAndPassword(
-        email,
-        password
-      );
+      const user: any = await auth.signInWithEmailAndPassword(email, password);
       localStorage.setItem('userId', user.uid);
       history.push('/');
     } catch (error) {
-      setError(true);
-      setPassword('');
+      setAuthenticateError(true);
     }
   };
 
   return (
     <div>
-      <AppLogoSection />
-      <LoginForm
-        password={password}
-        email={email}
-        onPasswordTextChange={onUsername}
-        onEmailTextChange={onEmail}
-        onLogin={onLoginUser}
-        passwordError={error}
-        passwordErrorMessage="Incorrect Email Or Password"
+      <LoginTemplate
+        onLoginUser={onLoginUser}
+        authenticate={authenticateError}
       />
     </div>
   );

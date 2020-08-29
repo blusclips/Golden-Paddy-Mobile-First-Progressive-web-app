@@ -22,7 +22,7 @@ export default ({}: AppSectionProps) => {
   });
   const classes = useStyles();
   return (
-    <Container margin={50} width="100%" height={60}>
+    <Container margin={120} width="100%" height={60}>
       <Grid
         justify="center"
         className={classes.container}

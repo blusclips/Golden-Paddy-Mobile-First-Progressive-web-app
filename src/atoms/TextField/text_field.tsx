@@ -73,7 +73,7 @@ export default ({
         onChange={(e) => onChange(e.target.value)}
       />
       <InputLabel className={classes.error} htmlFor={id}>
-        {error && errorMessage}
+        {error ? errorMessage : ''}
       </InputLabel>
     </>
   );

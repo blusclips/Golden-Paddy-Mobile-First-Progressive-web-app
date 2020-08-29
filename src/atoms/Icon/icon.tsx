@@ -3,7 +3,7 @@
 import React from 'react';
 import Icon from '@material-ui/core/Icon';
 import { makeStyles } from '@material-ui/core/styles';
-import { FONT_SIZE, COLORS } from '../../config/theme';
+import { COLORS } from '../../config/theme';
 
 export interface IconProps {
   name: string;
@@ -11,12 +11,14 @@ export interface IconProps {
   active?: boolean;
   buttonIcon?: boolean;
   disabled?: boolean;
+  margin?: number | string;
 }
 
-export default ({ name, disabled, active, buttonIcon }: IconProps) => {
+export default ({ name, disabled, active, buttonIcon, margin }: IconProps) => {
   const useStyles = makeStyles({
     root: {
       fontSize: '20px',
+      alignSelf: 'center',
       color: active
         ? buttonIcon
           ? COLORS.WHITE
@@ -26,6 +28,7 @@ export default ({ name, disabled, active, buttonIcon }: IconProps) => {
         : buttonIcon
         ? COLORS.WHITE
         : COLORS.PRIMARY_COLOR_LIGHT,
+      marginLeft: margin,
     },
   });
   const classes = useStyles();
