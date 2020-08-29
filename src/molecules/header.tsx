@@ -29,7 +29,7 @@ export default ({
     root: {
       width: '100%',
       height: 55,
-      position: 'absolute',
+      position: 'fixed',
       top: 0,
       borderRadius: 0,
       backgroundColor: '#fff',

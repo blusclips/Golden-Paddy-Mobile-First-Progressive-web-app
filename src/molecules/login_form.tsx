@@ -10,6 +10,7 @@ import Typography from '../atoms/Typography/Typography';
 
 export interface AppSectionProps {
   onLogin?: () => void;
+  loading?: boolean;
   password: string;
   passwordError?: boolean;
   passwordErrorMessage?: string;
@@ -22,6 +23,7 @@ export interface AppSectionProps {
 
 export default ({
   onLogin,
+  loading,
   password,
   email,
   emailError,
@@ -52,7 +54,7 @@ export default ({
           xs={12}
         >
           <Grid xs={3}>
-            <Container width="100%" height="100%" margin={'20%'}>
+            <Container width="100%" height="100%" margin={'10%'}>
               <Typography title> Email: </Typography>
             </Container>
           </Grid>
@@ -79,7 +81,7 @@ export default ({
           xs={12}
         >
           <Grid xs={3}>
-            <Container width="100%" height="100%" margin={'20%'}>
+            <Container width="100%" height="100%" margin={'10%'}>
               <Typography title> Password: </Typography>
             </Container>
           </Grid>
@@ -98,7 +100,7 @@ export default ({
         </Grid>
       </Container>
       <Container width="82%" margin={80}>
-        <LoginButton onClick={onLogin} active block title="login" />
+        <LoginButton onClick={onLogin} active={!loading} block title={loading ? "Loading...": "Login"} />
       </Container>
     </Container>
   );

@@ -11,10 +11,11 @@ interface User {
 
 interface Props {
   authenticate?: boolean;
+  loading?: boolean;
   onLoginUser: ({ email, password }: User) => void;
 }
 
-export default ({ onLoginUser, authenticate }: Props) => {
+export default ({ onLoginUser, authenticate, loading }: Props) => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState(false);
@@ -45,6 +46,7 @@ export default ({ onLoginUser, authenticate }: Props) => {
     <div>
       <AppLogoSection />
       <LoginForm
+        loading={loading}
         password={password}
         email={email}
         onPasswordTextChange={onUsername}

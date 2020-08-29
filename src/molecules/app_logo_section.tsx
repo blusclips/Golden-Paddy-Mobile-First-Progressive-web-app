@@ -40,7 +40,7 @@ export default () => {
         </Grid>
       </Grid>
       <Container margin={30} width="90%">
-          <Typography size={16}>
+          <Typography size={17}>
               {DATA.DESCRIPTION}
           </Typography>
       </Container>

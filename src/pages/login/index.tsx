@@ -13,14 +13,17 @@ interface User {
 export default () => {
   let history = useHistory();
   const [authenticateError, setAuthenticateError] = useState(false);
+  const [loader, setLoader] = useState(false);
 
   const onLoginUser = async ({ email, password }: User) => {
+    setLoader(true);
     try {
       const user: any = await auth.signInWithEmailAndPassword(email, password);
       localStorage.setItem('userId', user.uid);
       history.push('/');
     } catch (error) {
       setAuthenticateError(true);
+       setLoader(false);
     }
   };
 
@@ -29,6 +32,7 @@ export default () => {
       <LoginTemplate
         onLoginUser={onLoginUser}
         authenticate={authenticateError}
+        loading={loader}
       />
     </div>
   );

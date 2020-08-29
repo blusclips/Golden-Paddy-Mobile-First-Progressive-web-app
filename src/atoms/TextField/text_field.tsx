@@ -61,9 +61,7 @@ export default ({
   const classes = useStyles();
   return (
     <>
-      <InputLabel className={classes.label} htmlFor={id}>
-        {label}
-      </InputLabel>
+      
       <InputBase
         id={id}
         className={classes.input}

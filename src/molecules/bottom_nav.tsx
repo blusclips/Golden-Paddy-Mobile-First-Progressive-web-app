@@ -61,7 +61,7 @@ export default ({
           xs={12}
         >
           <Grid className={classes.tabContainer} xs={4}>
-             <Icon name="home" />
+             <Icon active name="home" />
              <Typography tab color={COLORS.PRIMARY_COLOR}> Home </Typography>
           </Grid>
 
