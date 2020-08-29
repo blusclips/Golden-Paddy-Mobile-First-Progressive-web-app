@@ -56,7 +56,7 @@ Upon running the Application.
 Login with the Following Credentials to proceed further
 
  <blockquote> Email: <strong> zonaster256@gmail.com </strong> </blockquote>
- <blockquote> Password: <strong> nixongrocerystory </strong> </blockquote>
+ <blockquote> Password: <strong> nixongrocerystore </strong> </blockquote>
 
 ### Running the application
 
