@@ -29,7 +29,6 @@ export default ({
     root: {
       width: '100%',
       height: 55,
-      position: 'fixed',
       top: 0,
       borderRadius: 0,
       backgroundColor: '#fff',
@@ -52,7 +51,6 @@ export default ({
   const classes = useStyles();
   return (
     <>
-      <div className={classes.header} />
       <Paper elevation={0} className={classes.root}>
         <Grid
           justify="center"

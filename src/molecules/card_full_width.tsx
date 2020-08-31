@@ -29,7 +29,6 @@ export default ({ title, description='', source }: Props) => {
     tabContainer: {
       width: '100%',
       height: 180,
-      display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
